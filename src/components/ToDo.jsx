@@ -22,12 +22,7 @@ const ToDo = ({ toDo, markDoneTask, setUpdateData, deleteTask }) => {
                       <FontAwesomeIcon icon={faCircleCheck} />
                     </span>
                     {task.status ? null : (
-                      <span
-                        title="Edit"
-                        onClick={() =>
-                          setUpdateData({ id: task.id, title: task.title, status: task.status ? true : false })
-                        }
-                      >
+                      <span title="Edit" onClick={() => setUpdateData(task)}>
                         <FontAwesomeIcon icon={faPen} />
                       </span>
                     )}
