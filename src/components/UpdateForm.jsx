@@ -1,19 +1,19 @@
 const UpdateForm = ({ updateData, updateTask, changeTask, cancelUpdate }) => {
   return (
     <>
-      <div className="row">
-        <div className="col">
-          <input
-            className="form_container"
-            value={updateData && updateData.title}
-            onChange={(e) => changeTask(e)}
-          ></input>
-        </div>
-        <div className="col-auto">
-          <button className="btn btn_success" onClick={updateTask}>
+      <div className="form_container">
+        <input
+          value={updateData && updateData.title}
+          onChange={(e) => changeTask(e)}
+          type="text"
+          placeholder="Update task..."
+          className="input"
+        ></input>
+        <div className="btn_container">
+          <button className="btn" onClick={updateTask}>
             Update
           </button>
-          <button className="btn btn_warning" onClick={cancelUpdate}>
+          <button className="btn btn_cancel" onClick={cancelUpdate}>
             Cancel
           </button>
         </div>

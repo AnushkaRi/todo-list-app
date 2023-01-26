@@ -1,17 +1,27 @@
 .App {
-  margin: 0 100px;
+  margin: 0 300px;
   text-align: center;
 }
 
-.task_container {
-  background-color: rgba(50, 121, 227, 0.7);
+h1 {
+  font-size: 3rem;
+  margin: 50px 0;
   color: rgb(255, 255, 255);
+}
+
+.yellow_letter {
+  color: rgb(241, 250, 3);
+}
+
+.task_container {
+  position: relative;
+  background-color: rgb(241, 250, 3);
+  color: rgb(0, 0, 0);
   border-radius: 8px;
   margin-bottom: 20px;
-  padding: 10px 140px 10px 15px;
+  padding: 8px 140px 8px 15px;
   text-align: left;
-  font-size: 1.8rem;
-  position: relative;
+  font-size: 1.7rem;
 }
 
 .task_container div {
@@ -20,17 +30,17 @@
 }
 
 .task_number {
-  color: rgb(255, 255, 255);
-  border: 2px solid rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 50%;
   width: 26px;
   height: 26px;
   font-size: 1.3rem;
   text-align: center;
   margin-right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .task_text {
@@ -57,9 +67,60 @@
   cursor: pointer;
 }
 .icons_container span:hover {
-  color: rgb(255, 255, 0);
+  color: rgb(255, 0, 0);
 }
 
-/* .mr-20 {
-  margin-right: 20px;
-} */
+.form_container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  position: relative;
+  padding: 12px;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  border: 3px solid rgb(241, 250, 3);
+  color: rgb(0, 0, 0);
+  outline: none;
+  background: transparent;
+}
+
+input[type="text"] {
+  width: 100%;
+  font-family: inherit;
+  color: rgb(255, 255, 255);
+}
+
+input::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.btn_container {
+  display: flex;
+  flex-flow: row;
+}
+
+.btn {
+  position: relative;
+  padding: 12px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: rgb(3, 122, 250);
+  color: rgb(255, 255, 255);
+  border: none;
+  margin-left: 15px;
+  width: 125px;
+}
+
+.btn:hover {
+  font-style: italic;
+}
+
+.btn_cancel {
+  background-color: rgb(255, 0, 0);
+}

@@ -84,7 +84,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Everyday ToDo List</h1>
+      <h1>
+        Everyday <span className="yellow_letter">ToDo</span> List
+      </h1>
 
       {/*Update Task & Add Task*/}
       {updateData && updateData ? (

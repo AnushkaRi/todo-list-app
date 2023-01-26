@@ -1,12 +1,16 @@
 const AddTaskForm = ({ newTask, setNewTask, addTask }) => {
   return (
     <>
-      <div className="row">
-        <div className="col">
-          <input value={newTask} onChange={(e) => setNewTask(e.target.value)} className="form_container"></input>
-        </div>
-        <div className="col-auto">
-          <button onClick={addTask} className="btn btn_success">
+      <div className="form_container">
+        <input
+          value={newTask}
+          onChange={(e) => setNewTask(e.target.value)}
+          type="text"
+          placeholder="Enter your task..."
+          className="input"
+        ></input>
+        <div className="btn_container">
+          <button onClick={addTask} className="btn">
             Add Task
           </button>
         </div>
