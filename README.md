@@ -1,5 +1,5 @@
-# ToDo List App
-Simple ToDo List application build with React.
+# To-Do List App
+Simple To-Do List application built with React.
 
 Tasks can be added, edited, deleted or crossed if done.
 
